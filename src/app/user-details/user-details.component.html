@@ -1,0 +1,13 @@
+<h3>User Detail Information</h3>
+<div *ngIf="user">
+
+<div>
+    Full Name: {{user.name}}
+</div>
+<div>
+    Email Address: {{user.email}}
+</div>
+
+</div>
+<hr>
+<button (click)="listUsers()">Back to User List</button>

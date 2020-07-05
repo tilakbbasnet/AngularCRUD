@@ -1,0 +1,33 @@
+<h3>Update Employee</h3>
+<div>
+  <form (ngSubmit)="onFormSubmit()">
+
+  <div>
+    Name:<input type="text" [(ngModel)]="user.name" name="name" required/><br/>
+  </div>
+
+  <div>
+    Email:<input type="text" [(ngModel)]="user.email" name="email" required/><br/>
+  </div>
+
+  <div>
+    Password:<input type="password" [(ngModel)]="user.password" name="password" required/><br/>
+  </div>
+
+  <div>
+    DOB:<input type="date" [(ngModel)]="user.dob" name="dob" required/><br/>
+  </div>
+
+  <div>
+    <input id="male" type="radio" [(ngModel)]="user.gender" name="gender" value="Male"/> Male
+    <input id="female" type="radio" [(ngModel)]="user.gender" name="gender" value="Female"/> Female
+    <input id="others" type="radio" [(ngModel)]="user.gender" name="gender" value="Others"/> Others<br/>
+  </div>
+
+  <div>
+    <input type="submit" value="Update"/>
+  </div>
+
+  <div>{{message}}</div>
+  </form>
+</div>
